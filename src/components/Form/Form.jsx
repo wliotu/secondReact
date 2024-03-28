@@ -1,13 +1,12 @@
 import React from 'react'
-import img1 from '../../assets/img1.jpeg'
 
 
-const Form = () => {
+const Form = ({image, price}) => {
   return (
     <div className='Form'>
-      <img src={img1} alt="img" />
-      <p className='price'>$ 50</p>
-      <button type="">ADD TO CART</button>
+      <img src={image} alt="img" />
+      <p className='form_price'>$ {price}</p>
+      <button className='form_add'>ADD TO CART</button>
     </div>
   )
 }
